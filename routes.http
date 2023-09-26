@@ -1,0 +1,26 @@
+POST http://localhost:3333/videos
+//quando a requisição tem corpo precisa de content-type
+Content-Type: application/json
+
+{
+  "title": "Video node",
+  "description": "Esse é o video 01",
+  "duration": 180
+}
+
+###
+GET  http://localhost:3333/videos
+
+###
+PUT http://localhost:3333/videos/3c2405f2-f287-41ac-902d-d51cc4e88ea0
+Content-Type: application/json
+
+{
+  "title": "Video 02",
+  "description": "Esse é o video 02",
+  "duration": 110
+}
+
+###
+DELETE http://localhost:3333/videos/8963fc59-0d7d-4a50-9e60-6239f6319244
+
